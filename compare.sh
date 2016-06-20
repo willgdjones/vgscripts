@@ -14,6 +14,13 @@ if [[ $debug == "1" ]];
 then zcat $prefix/${prefix}all.fastq.gz | head -10000 | bioawk '{printf("%s%s",$0,(NR%4==0)?"\n":"\~")}' | shuf | tr '~' '\n' | head -$((read_number*4)) > $prefix/${prefix}.${read_number}rand.fastq 
 fi
 
+#Generate new indexes
+bwa index /nfs/users/nfs_w/wj2/WillJonesYeastVariationGraphs/data/reference/SGD_2010.fasta
+
+~/scripts/index.sh
+
+
+
 #Align with BWA
 bwa mem ~/WillJonesYeastVariationGraphs/data/reference/SGD_2010.fasta $prefix/${prefix}.${read_number}rand.fastq > $prefix/${prefix}.${read_number}rand.sam
 

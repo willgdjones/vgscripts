@@ -1,0 +1,35 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@vr-4-1-04>
+Subject: Job 7050646: <default> in cluster <vr> Exited
+
+Job <default> was submitted from host <vr-4-1-16> by user <wj2> in cluster <vr>.
+Job was executed on host(s) <vr-4-1-04>, in queue <normal>, as user <wj2> in cluster <vr>.
+</nfs/users/nfs_w/wj2> was used as the home directory.
+</nfs/users/nfs_w/wj2/scripts> was used as the working directory.
+Started at Mon Jun 20 13:40:49 2016
+Results reported on Mon Jun 20 13:40:50 2016
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+index.sh
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time :                                   0.02 sec.
+    Total Requested Memory :                     16000.00 MB
+    Delta Memory :                               -
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <progress.err> for stderr output of this job.
+
